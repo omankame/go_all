@@ -1,0 +1,3 @@
+git is underlying technology
+github is website. its public and private base
+

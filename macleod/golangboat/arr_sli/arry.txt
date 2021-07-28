@@ -1,0 +1,18 @@
+
+array is value type not reference type==> if they assign new variable, copy of the original array is assigned hence if changes made to new varibale do not imapact on original arraya [5]int and b [10]int is not same type , hence can not comparevar a [3]int is array declaration
+
+slcie internally represented as structure
+
+type slice struct {
+     Length	int
+     Capacity	int
+     ZerothElement  *byte
+}
+
+
+memory optimisation ===> slice referenced to backed array. so if slice is in memory then that array must also in memory. But if size of array is large then that array can not garbage collected.
+
+so to solve it create new slice so and use copy function like below
+countriesCpy := make([]string, len(neededCountries))
+copy(countriesCpy, neededCountries)
+ now you can old big arrany

@@ -1,0 +1,19 @@
+GO interfaces are implemented implicitly, if a type contians all the methods declared in the interfaces.
+
+Interface internally represented by tuple (type, value). Type is the underlying concrete type of the interface
+and value hold the concrete type.
+
+Empty interface An interface that has zero method is called as an empty interface. It is represented as interface{}
+All types implements empty interface.
+
+Type Assertion It is used to extract the underlying value of the interface.
+i.(T) is the syntax used to get the underlying value of interface i whose concrete type is T.
+
+assertion underyling problem can be solved using.   v, ok := i.(T)  ==> T can int, string strut any type
+
+A type switch is used to compare the concrete type of an interface against multiple types specified in various case statements. It is similar to switch case. The only difference being the cases specify types and not values as in normal switch.
+
+it is possible to compare type and interface. If that type implements interface
+
+
+ 

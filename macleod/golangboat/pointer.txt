@@ -1,0 +1,31 @@
+Pointer is varibale which holds the address of another variable.
+
+define pointer type. a *int , ex. var a *int, a = &b , a store the address of varibale b. *T ==> type of pointer variable
+
+zero value of pointer is nil
+
+pointer can be created with help of new functions.   size := new(int) && *size = 85 o/p ==> 85
+
+Deferencing the pointer means accessing the value of variable which pointers point to. 
+
+b := 100
+a := &b
+fmt.Println("value of b", *a)
+
+passing pointer to function and returning from function is absolutely fine in GO
+Return pointer feature is not available in C and C++
+
+DO not pass pointer to an array in function, instead you can pass slice, it will work the same way and recommended in Go
+
+also important syntax a[x] ==> (*a)[x]
+
+Go does  not support pointer arithmatic
+
+a [3]{100, 105, 106}
+
+b = &a
+
+a++  //not supported in go
+
+  
+

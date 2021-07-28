@@ -1,0 +1,26 @@
+{{template "header"}}
+
+<form method="POST">
+    <label for="name">NAME</label>
+    <input type="text" id="name" name="name">
+    <br>
+    
+    <label for="gender">GENDER</label>
+    <input type="text" id="gender" name="gender">
+    <br>
+    
+    <label for="age">AGE</label>
+    <input type="text" id="age" name="age">
+    <br> 
+
+  <input type="submit">
+</form>  
+  
+<br>
+
+<h1>Name: {{.Name}}</h1>
+<h1>GENDER: {{.Gender}}</h1>
+<h1>AGE: {{.Age}}</h1>
+
+
+{{template "footer"}}

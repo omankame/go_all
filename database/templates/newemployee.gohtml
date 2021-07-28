@@ -1,0 +1,30 @@
+{{template "header"}}
+
+<form method="POST">
+    <label for="empid">Employee ID</label>
+    <input type="number" id="empid" name="eid">
+    <br>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first">
+    <br>
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last">
+    <br>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <br>
+    <input type="submit">
+</form>
+
+<br>
+
+<h1>EID: {{.Empid}}</h1>
+<h1>First: {{.First_name}}</h1>
+<h1>Last: {{.Last_name}}</h1>
+<he>Email: {{.Email}}</h1>
+
+
+<br>
+<br>
+<h4><a href="/">Main Page </a> &emsp; &emsp;
+{{template "footer"}}

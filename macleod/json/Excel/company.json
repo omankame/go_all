@@ -1,0 +1,8 @@
+[
+  { "App": "Instagram", "Company": "Facebook", "Category": "Social Media" },
+  { "App": "WeChat", "Company": "Tencent", "Category": "Social Media" },
+  { "App": "Hotstar", "Company": "Disney", "Category": "Entertainment" },
+  { "App": "CNBC", "Company": "Comcast", "Category": "News" },
+  { "App": "SnapChat", "Company": "Snap", "Category": "Social Media" },
+  { "App": "Jio", "Company": "Jio", "Category": "Telecom" }
+]

@@ -1,0 +1,22 @@
+package main
+
+import (
+      "fmt"
+)
+
+func main() {
+    s:=  fmt.Sprintf("Hello World\nHow are you doing today\nHope all is well with your go\nAnd code")
+
+    fmt.Println(s)
+  
+    te := []string{ om , uttu, bittu}
+    var fi string
+    for i, v in  range  te {
+    fi = v +\n
+    }
+
+    fmt.Println(fi)
+
+
+}
+

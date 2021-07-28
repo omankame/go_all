@@ -1,0 +1,19 @@
+{{ define "comments" }}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Comments Related to Posts</title>
+</head>
+<body>
+  <h1>Comments Details</h1>
+  {{ range . }}
+    <p>{{ .ID }}</p>
+    <p>{{ .PostID }}</p>
+    <p>{{ .Author }}</p>
+    <p>{{ .Comment }}</p>
+    <p>{{ .DatePublished }}</p>
+  {{ end }}
+</body>
+</html>
+{{ end }}
+

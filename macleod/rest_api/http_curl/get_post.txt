@@ -1,0 +1,28 @@
+//https://www.informit.com/articles/article.aspx?p=2861456&seqNum=7
+
+http client can send data to http server along with http request.
+
+1. submitting form
+2. setting an options on data to be returned
+3. thorugh api interface
+
+For GET data is usually through query string 
+https://www.google.com/?q=golang   is example
+
+query.go is get example
+
+r.URL.Query() ==> refer "net/url" also but not required to import. 
+for k, v := range r.URL.Query() {
+    fmt.Printf("%s %s\n", k, v)
+}
+
+
+for POST data is usually through body
+
+r.Method == "POST"
+body, err := ioutil.ReadAll(req.Body)
+fmt.Println(body)
+
+pattern of post request curl -si -X POST -d "some data to send" http://localhost:8080/hello/
+
+Also check w.Write and w.WriteHeader  ==> check via go doc http responsewriter

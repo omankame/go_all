@@ -1,0 +1,5 @@
+strings are nothing but slice of bytes. strings are immutable. if we want to change any character of string first make slice of rune of that string and then you can change the strings perticular character
+
+rune is int32 and very important concept isUTF 8 encoding as ascii do not conatin all charcters
+
+you canuse range for loopto retrieve the character from strings

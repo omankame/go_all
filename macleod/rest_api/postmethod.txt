@@ -1,0 +1,14 @@
+Loginc for post is
+
+r.Method == Post {
+   perform action
+}
+
+2. w.Header().Set("Content-Type", "application/json")  ==> header information in POST ,
+     json.NewEncoder(w).Encode(posts)  ==> if json then while giving repsonse
+     decoder := json.NewDecoder(req) ==> to accept the request in POST
+     decoder.Decode(data) ==> mostly here data is structure or param := mux.Vars(req)
+
+3.
+
+

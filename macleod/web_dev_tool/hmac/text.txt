@@ -1,0 +1,2 @@
+Hmac is for legitemate value. 
+packages are "crypto/hmac" and "crypto/sha256"

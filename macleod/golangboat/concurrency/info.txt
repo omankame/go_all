@@ -1,0 +1,30 @@
+concurrncy in go is achieved via Goroutines and Channels. This islike thread in java.
+channels is like pipe through which goroutines communicate with each other. It prevent race conditions from happening when accessing shared memory using goroutines.
+
+
+When new goroutine is started, the goroutine call return immedaitely. Func wait to excute and then control returns.
+
+The main goroutine should be running for any other gorutines to run. if the main goroutines terminated then no other goroutines will run.
+
+
+channel is like pipe through which goroutines cimmunicate with each other
+each channel has type if we declare as int then only int type data can be passed.
+chant T , zero value of chan is nil
+a := make(chan int)
+
+waiting for data from the done channel in line <-done   ===> reading data from channel
+done <- true  sending data to channel done    ===> writing data to channel
+
+deadlock ==> hnadle deadlock carefully when use channels.
+If a Goroutine is sending data on a channel, then it is expected that some other Goroutine should be receiving the data. If this does not happen, then the program will panic at runtime with Deadlock
+
+
+Unidirectional channel := ex. sendch chan<- int, here sendch is send only channel
+Biredirction channel can ve convert as unidirection cahnnel in different goroutins
+
+for loop in while receiving data from channel.  v, ok := <-ch
+
+
+
+
+

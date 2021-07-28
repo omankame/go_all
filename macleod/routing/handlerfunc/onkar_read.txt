@@ -1,0 +1,7 @@
+ handle , handlefunc and handlerfunc are all different  types
+
+func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request)
+
+handlerFunc(d)
+
+func d(res http.ResponseWriter, req *http.Request)

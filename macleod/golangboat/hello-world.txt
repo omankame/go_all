@@ -1,0 +1,32 @@
+lets say you have created your program under /home/test
+
+# go install 
+
+it generates error
+
+TO fix it ===> ex. export PATH=$PATH:~/go/bin  
+               export GOBIN=/home/macleod/bin/
+now go and check bin directory
+
+go build ==> similar to go install only create binary locally
+ 
+go run main.go ==> 
+
+type inference 
+var age = 20  ==> here go will detect age as int automatically. i.e type inference
+
+basic types available in go
+bool
+Numeric Types
+int8, int16, int32, int64, int
+uint8, uint16, uint32, uint64, uint
+float32, float64
+complex64, complex128
+byte
+rune
+string
+
+byte is an alias of uint8
+rune is an alias of int32
+
+The value of a constant should be known at compile time. Hence it cannot be assigned to a value returned by a function call since the function call takes place at run time.

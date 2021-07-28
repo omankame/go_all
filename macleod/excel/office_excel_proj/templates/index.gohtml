@@ -1,0 +1,78 @@
+{{template "header"}}
+
+<form method="POST">
+    <label for="ssh_ip">SSH_IP</label>
+    <input type="text" id="ssh_ip" name="ssh">
+    <br>
+    <label for="user">USER</label>
+    <input type="text" id="user" name="user">
+    <br>
+    <label for="passwd">PASSWD</label>
+    <input type="text" id="passwd" name="passwd">
+    <br>
+    <label for="device">DEVICE</label>
+    <input type="text" id="device" name="device">
+    <br>
+    <label for="dependents">DEPENDENTS</label>
+    <input type="text" id="dependents" name="dependents">
+    <br>
+    
+    <label for="vlan_ids">VLAN_IDS</label>
+    <input type="text" id="vlan_ids" name="vlan_ids">
+    <style type="text/css">
+    <br {
+         mso-data-placement:same-cell;
+        }
+    </style> 
+
+    
+    <label for="ipaddr">IPADDR</label>
+    <input type="text" id="ipaddr" name="ipaddr">
+    <br>
+    <label for="netmask">NETMASK</label>
+    <input type="text" id="netmask" name="netmask">
+    <br>
+    <label for="gateway">GATEWAY</label>
+    <input type="text" id="gateway" name="gateway">
+    <br>
+    <label for="ipaddr_v6">IPADDR_V6</label>
+    <input type="text" id="ipaddr_v6" name="ipaddr_v6">
+    <br>
+    <label for="netmask_v6">NETMASK_V6</label>
+    <input type="text" id="netmask_v6" name="netmask_v6">
+    <br>
+    <label for="gateway_v6">GATEWAY_V6</label>
+    <input type="text" id="gateway_v6" name="gateway_v6">
+    <br>
+    <label for="status">STATUS</label>
+    <input type="text" id="status" name="status">
+    <br>
+    <label for="reason">REASON</label>
+    <input type="text" id="reason" name="reason">
+    <br>
+    <label for="remarks">REMARKS</label>
+    <input type="text" id="remarks" name="remarks">
+    <br>
+    <input type="submit">
+</form>
+
+<br>
+
+<h1>SSH_IP: {{.Ssh_ip}}</h1>
+<h1>USER: {{.User}}</h1>
+<h1>PASSWORD: {{.Passwd}}</h1>
+<h1>DEVICE: {{.Device}}</h1>
+<h1>DEPENDENTS: {{.Dependents}}</h1>
+<h1>VLAN_IDS: {{.Vlan_ids}}</h1>
+<h1>IPADDR: {{.Ipaddr}}</h1>
+<h1>NETMASK: {{.Netmask}}</h1>
+<h1>GATEWAY: {{.Gateway}}</h1>
+<h1>IPADDR_V6: {{.Ipaddr_v6}}</h1>
+<h1>NETMASK_V6: {{.Netmask_v6}}</h1>
+<h1>GATEWAY_V6: {{.Gateway_v6}}</h1>
+<h1>STATUS: {{.Status}}</h1>
+<h1>REASON: {{.Reason}}</h1>
+<h1>REMARKS: {{.Remarks}}</h1>
+
+
+{{template "footer"}}

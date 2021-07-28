@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+
+body {background-color: green;}
+
+</style>
+
+
+</head>
+<body>
+      <h3> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  Base64 Encoding, Enter Plain Text </h3>
+
+       <form method="POST">
+       <textarea id="w3review" name="w3review" cols="150" rows="15"  ></textarea>
+       <br>
+       <input autofocus type="submit" value="ENCODE">
+     
+       <h3> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  Base64 Encoding, Encoded Text </h3>
+       {{$str := .}}
+       
+       <textarea id="w3review" name="w3review" cols="150" rows="15"  >{{$str}}</textarea>
+
+       <h5><a href="/"> Return to Main Page  </a> &emsp; &emsp; &emsp; &emsp; <a href="/decode"> Go to Decoding Page  </a> </h5> 
+       
+</body>
+
+</html>
+
+

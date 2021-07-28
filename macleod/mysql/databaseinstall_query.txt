@@ -1,0 +1,27 @@
+1. 
+
+2. https://github.com/go-sql-driver/mysql#installation
+
+3. play with mysql
+
+create databases test;
+use test;
+create table employees (
+    -> empid decimal(6,0),
+    -> first_name varchar(20),
+    -> last_name varchar(20),
+    -> );
+
+insert into employees (empid, first_name, last_name) values (1, 'onkar', 'mankame');
+select * from employees;
+
+4. DSN Data Source Name
+   username:password@protocol(address)/dbname?param=value
+for aws connection
+db, err = sql.Open("mysql", "awsuser:mypassword@tcp(mydbinstance.cakwl95bxza0.us-west-1.rds.amazonaws.com:3306)/test02?charset=utf8")
+
+for local connection
+    db, err = sql.Open("mysql", "root:Redhat@123@tcp(localhost:3306)/test?charset=utf8")
+
+5. For queries => https://zetcode.com/golang/mysql/
+    

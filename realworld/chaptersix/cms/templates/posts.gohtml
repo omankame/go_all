@@ -1,0 +1,17 @@
+{{ define "posts" }}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latest Posts</title>
+</head>
+<body>
+  <h1>Latest Posts</h1>
+  {{ range . }}
+    <h2><a href="/post/{{ .ID }}">{{ .Title }}</a></h2>
+    <p>{{ .Content }}</p>
+    <p>{{ .DatePublished }}</p>
+  {{ end }}
+</body>
+</html>
+{{ end }}
+

@@ -1,0 +1,14 @@
+ip route add 9009.90.78.99/32 via 172.17.25.1 dev bond0.3208 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88/32 via 2405:200:1413:100::5:1 dev bond0.3208 
+ip route add 172.17.23.201/24 via 10.20.30.100 dev eth0 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88/32 via 172.17.25.1 dev eth0 
+ip route add 999.78.9099.88 via  dev  
+ip route add 999.78.9099.88/24 via 172.17.25.1 dev bond0.3208 
+ip route add 999.78.9099.88/24 via 172.17.25.1 dev bond0.3208 
+ip route add 2405:200:1413:100:0:0:39:207/112 via 2405:200:1413:100::5:1 dev eno1 
+ip route add 999.78.9099.88/128 via 2405:200:1413:100::5:1 dev eth0 
